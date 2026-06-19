@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyfirmata-simplifier"
+version = "1.0.0"
+description = "Arduino-style motor and servo control using PyFirmata2"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Vihaan Parlikar"}
+]
+keywords = ["arduino", "motor", "servo", "control", "firmata"]
+dependencies = [
+    "pyfirmata2",
+    "pyserial"
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/VihaanParlikar/pyfirmata-simplifier"
+
+[tool.setuptools.packages.find]
+where = ["src"]
